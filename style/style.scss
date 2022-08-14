@@ -1,15 +1,29 @@
 
 $col-primary: #CC5500;
-$col-secondary: rgb(0, 51, 0) ;
+$col-secondary: #003300 ;
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    background-color: #00aeff00;
+    background-color: #0f0000ef;
+    padding: 1em;
 }
 
+footer {
+    text-align: center;
+    background-color: black;
+    font-size: 2em;
+    color: $col-secondary;
+    padding: 2em;
+    margin-top: 1em ;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center; 
+}
 
 nav {
     float: right;
@@ -24,5 +38,16 @@ nav {
     }
     li {
         display: inline-block;
+        a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: $col-secondary;
+            border: $col-secondary;
+            border-radius: 1.2em;
+        }
+        a:hover {
+            background-color: #001b00;
+        }
     }
 }
