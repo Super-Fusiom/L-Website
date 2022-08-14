@@ -7,22 +7,38 @@ body {
 }
 
 header {
-    background-color: #0f0000ef;
+    background-color: $col-primary;
     padding: 1em;
 }
 
 footer {
     text-align: center;
-    background-color: black;
-    font-size: 2em;
-    color: $col-secondary;
+    background-color: $col-secondary;
+    color: $col-primary;
     padding: 2em;
     margin-top: 1em ;
 }
 
 h1 {
-    font-size: 3em;
     text-align: center; 
+}
+
+h2 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 2em;
+    footer {
+        font-size: 1em;
+    }
+}
+
+section {
+    text-align: center;
+    a {
+        font-size: 2em;
+    }
 }
 
 nav {
@@ -50,4 +66,66 @@ nav {
             background-color: #001b00;
         }
     }
+}
+
+/* Three main sections and the 'Rest section'*/
+.sectA {
+    background-color: $col-primary;
+    color:$col-secondary;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectB {
+    background-color: $col-secondary;
+    color: $col-primary;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectC {
+    b{
+        color:$col-primary;
+    }
+    color:$col-secondary;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Rsect{
+    text-align: center;
+    h2 {
+        color:$col-primary;
+    }
+    color: $col-secondary;
+}
+
+.thumb {
+    margin: 2em;
+    height: 400px;
+    width: auto;
+}
+
+.thumb-backA {
+    height: auto;
+    border-radius: 5em;
+    width: auto;
+    background-color: $col-secondary;
+    border: $col-secondary;
+}
+.thumb-backB {
+    height: auto;
+    border-radius: 5em;
+    width: auto;
+    background-color: $col-primary;
+    border: $col-primary;
 }
