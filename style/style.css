@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -35,6 +36,10 @@ section {
 }
 section a {
   font-size: 2em;
+}
+
+article {
+  text-align: center;
 }
 
 nav {
@@ -98,6 +103,7 @@ nav li a:hover {
 
 .Rsect {
   text-align: center;
+  margin-top: 1em;
   color: #003300;
 }
 .Rsect h2 {
@@ -105,8 +111,8 @@ nav li a:hover {
 }
 
 .thumb {
-  margin: 2em;
-  height: 400px;
+  margin: 1.5em;
+  height: 325px;
   width: auto;
 }
 
@@ -124,6 +130,32 @@ nav li a:hover {
   width: auto;
   background-color: #CC5500;
   border: #CC5500;
+}
+
+#intro {
+  background: black url(../img/homepage-hero.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 1000px;
+}
+
+#intro-block {
+  margin-top: 40em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 19px;
+  color: #CC5500;
+  padding-bottom: 2em;
+  background-color: #003300;
+}
+#intro-block a {
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+  margin: 30px 5px;
+  border: #CC5500 2px solid;
+  min-width: 150px;
+  text-decoration: none;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

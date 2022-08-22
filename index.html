@@ -9,12 +9,16 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   <!--AOS Library-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!--JQuery gallery-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
  </head>
  <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <header>
         <img src="img/Garden_kings_logo.png">
         <nav>
@@ -26,12 +30,29 @@
         </nav>
     </header>
     <section id="home">
-        <h1>Welcome to Garden Kings</h1>
+        <h1>Garden Kings</h1>
     </section>
-
-
-    <article>
+   
+    <section id="intro"> 
+        <!--The other navigation place-->
+        <div id="intro-block">
+            <h2>Where would you like to go to today?</h2>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </section>
+    <article data-aos="fade-up">
+        <h2>Want to see how we do things?</h2>
         <!--Gallery-->
+        <a data-fancybox="gallery1" href="img/mowing.jpg"> <img src="img/mowing_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/cleanup.jpg"> <img src="img/cleanup_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/felling.jpg"> <img src="img/felling_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/hedges.jpg"> <img src="img/hedges_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/planting.jpg"> <img src="img/planting_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/pruning.jpg"> <img src="img/pruning_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/removal.jpg"> <img src="img/removal_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/topsoil.jpg"> <img src="img/topsoil_thumb.jpg"></a>
+        <a data-fancybox="gallery1" href="img/weeding.jpg"> <img src="img/weeding_thumb.jpg"></a>
     </article>
     <footer>
         <p><small>&copy; Garden Kings 2022 - Website by Web Makers Inc.</small></p>

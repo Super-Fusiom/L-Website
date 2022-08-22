@@ -4,6 +4,8 @@ $col-secondary: #003300 ;
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+
 }
 
 header {
@@ -39,6 +41,10 @@ section {
     a {
         font-size: 2em;
     }
+}
+
+article {
+    text-align: center;
 }
 
 nav {
@@ -103,6 +109,7 @@ nav {
 
 .Rsect{
     text-align: center;
+    margin-top:1em;
     h2 {
         color:$col-primary;
     }
@@ -110,8 +117,8 @@ nav {
 }
 
 .thumb {
-    margin: 2em;
-    height: 400px;
+    margin: 1.5em;
+    height: 325px;
     width: auto;
 }
 
@@ -128,4 +135,30 @@ nav {
     width: auto;
     background-color: $col-primary;
     border: $col-primary;
+}
+
+#intro {
+    background: black url(../img/homepage-hero.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 1000px;
+}
+
+#intro-block {
+    margin-top: 40em;
+    padding-top: 2em;
+    text-align:center;
+    font-size:19px;
+    color:$col-primary;
+    padding-bottom:2em;
+    background-color: $col-secondary;
+    a {
+        display: inline-block;
+        color:inherit;
+        font-size: inherit;
+        margin: 30px 5px;
+        border: $col-primary 2px solid;
+        min-width: 150px;
+        text-decoration: none;
+        padding: 1em;
+    }
 }
